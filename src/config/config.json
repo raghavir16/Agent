@@ -1,0 +1,53 @@
+{
+    "model_configs": [
+        {
+            "model": "gpt-4",
+            "api_key": "YOUR_OPENAI_API_KEY"
+        }
+    ],
+    "agent_configs": {
+        "requirements_analyst": {
+            "temperature": 0.7,
+            "max_tokens": 1500
+        },
+        "solutions_architect": {
+            "temperature": 0.7,
+            "max_tokens": 2000
+        },
+        "cost_analyst": {
+            "temperature": 0.3,
+            "max_tokens": 1000
+        },
+        "solution_designer": {
+            "temperature": 0.7,
+            "max_tokens": 2000
+        },
+        "risk_assessor": {
+            "temperature": 0.5,
+            "max_tokens": 1500
+        },
+        "document_assembler": {
+            "temperature": 0.3,
+            "max_tokens": 2000
+        },
+        "proposal_manager": {
+            "temperature": 0.5,
+            "max_tokens": 1500
+        }
+    },
+    "document_templates": {
+        "proposal": {
+            "sections": [
+                "title_page",
+                "contents",
+                "executive_summary",
+                "requirements",
+                "scope",
+                "solution",
+                "deliverables",
+                "costs",
+                "raid"
+            ]
+        }
+    }
+} 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Proposal Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Proposal Generator</h1>
+        <div class="form-container">
+            <form id="proposalForm">
+                <div class="form-group">
+                    <label for="projectOverview">Project Overview:</label>
+                    <textarea id="projectOverview" name="projectOverview" rows="10" required></textarea>
+                </div>
+                <button type="submit" id="submitBtn">Generate Proposal</button>
+            </form>
+        </div>
+        <div id="status" class="status-container"></div>
+        <div id="downloadSection" class="download-section" style="display: none;">
+            <button id="downloadBtn">Download Proposal</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 
